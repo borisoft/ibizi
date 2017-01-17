@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FCEC0A6E963B0C2A9C9D947 /* Pods_IBIZI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4B0D39AC772F9593CC4F2B /* Pods_IBIZI.framework */; };
 		BC9709681E25579400264050 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9709671E25579400264050 /* main.swift */; };
+		BC97096F1E2557D600264050 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97096E1E2557D600264050 /* FileWorker.swift */; };
+		BC9709711E255EF400264050 /* Generators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9709701E255EF400264050 /* Generators.swift */; };
+		BCA0D2C51E2D227C00129260 /* KeyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0D2C41E2D227C00129260 /* KeyGenerator.swift */; };
+		BCCDF6E91E296F7100A153F2 /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCDF6E81E296F7100A153F2 /* Coder.swift */; };
+		BCCDF6EB1E2B844E00A153F2 /* BlockEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCDF6EA1E2B844E00A153F2 /* BlockEncryption.swift */; };
+		BCCDF6ED1E2B8D1400A153F2 /* BitOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCDF6EC1E2B8D1400A153F2 /* BitOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F17D4814A15C3BD7ACAA6FA /* Pods-IBIZI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBIZI.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBIZI/Pods-IBIZI.release.xcconfig"; sourceTree = "<group>"; };
+		7D4B0D39AC772F9593CC4F2B /* Pods_IBIZI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBIZI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC5D2D91FE0269607BF3EAAF /* Pods-IBIZI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBIZI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBIZI/Pods-IBIZI.debug.xcconfig"; sourceTree = "<group>"; };
 		BC9709641E25579400264050 /* IBIZI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IBIZI; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9709671E25579400264050 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BC97096E1E2557D600264050 /* FileWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
+		BC9709701E255EF400264050 /* Generators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generators.swift; sourceTree = "<group>"; };
+		BCA0D2C41E2D227C00129260 /* KeyGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyGenerator.swift; sourceTree = "<group>"; };
+		BCCDF6E81E296F7100A153F2 /* Coder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coder.swift; sourceTree = "<group>"; };
+		BCCDF6EA1E2B844E00A153F2 /* BlockEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockEncryption.swift; sourceTree = "<group>"; };
+		BCCDF6EC1E2B8D1400A153F2 /* BitOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +48,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCEC0A6E963B0C2A9C9D947 /* Pods_IBIZI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68A959A76E4F7C3204A900A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D4B0D39AC772F9593CC4F2B /* Pods_IBIZI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC97095B1E25579400264050 = {
 			isa = PBXGroup;
 			children = (
 				BC9709661E25579400264050 /* IBIZI */,
 				BC9709651E25579400264050 /* Products */,
+				D4D4B56A3C17DEA9C8CB7DFE /* Pods */,
+				68A959A76E4F7C3204A900A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +85,23 @@
 			isa = PBXGroup;
 			children = (
 				BC9709671E25579400264050 /* main.swift */,
+				BC97096E1E2557D600264050 /* FileWorker.swift */,
+				BC9709701E255EF400264050 /* Generators.swift */,
+				BCCDF6E81E296F7100A153F2 /* Coder.swift */,
+				BCCDF6EA1E2B844E00A153F2 /* BlockEncryption.swift */,
+				BCCDF6EC1E2B8D1400A153F2 /* BitOperations.swift */,
+				BCA0D2C41E2D227C00129260 /* KeyGenerator.swift */,
 			);
 			path = IBIZI;
+			sourceTree = "<group>";
+		};
+		D4D4B56A3C17DEA9C8CB7DFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D2D91FE0269607BF3EAAF /* Pods-IBIZI.debug.xcconfig */,
+				3F17D4814A15C3BD7ACAA6FA /* Pods-IBIZI.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC97096B1E25579400264050 /* Build configuration list for PBXNativeTarget "IBIZI" */;
 			buildPhases = (
+				8C6EC8B9C956A2337148685F /* [CP] Check Pods Manifest.lock */,
 				BC9709601E25579400264050 /* Sources */,
 				BC9709611E25579400264050 /* Frameworks */,
 				BC9709621E25579400264050 /* CopyFiles */,
+				87C100E6FCC8D808AE659BF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -116,12 +160,51 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87C100E6FCC8D808AE659BF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBIZI/Pods-IBIZI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6EC8B9C956A2337148685F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC9709601E25579400264050 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC97096F1E2557D600264050 /* FileWorker.swift in Sources */,
+				BCCDF6EB1E2B844E00A153F2 /* BlockEncryption.swift in Sources */,
 				BC9709681E25579400264050 /* main.swift in Sources */,
+				BC9709711E255EF400264050 /* Generators.swift in Sources */,
+				BCCDF6E91E296F7100A153F2 /* Coder.swift in Sources */,
+				BCCDF6ED1E2B8D1400A153F2 /* BitOperations.swift in Sources */,
+				BCA0D2C51E2D227C00129260 /* KeyGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +301,7 @@
 		};
 		BC97096C1E25579400264050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC5D2D91FE0269607BF3EAAF /* Pods-IBIZI.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = Z3FVD2PY4W;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -227,6 +311,7 @@
 		};
 		BC97096D1E25579400264050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F17D4814A15C3BD7ACAA6FA /* Pods-IBIZI.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = Z3FVD2PY4W;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -253,6 +338,7 @@
 				BC97096D1E25579400264050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
